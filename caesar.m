@@ -1,4 +1,5 @@
 function cipher_text =  caesar(clear_text, key, is_spanish)
+    % create a new 
     cipher_text = zeros(1, length(clear_text));
     for i = 1:length(clear_text)
         if isletter(clear_text(i))
