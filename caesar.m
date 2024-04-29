@@ -1,6 +1,6 @@
 function cipher_text =  caesar(clear_text, key)
     % CAESAR Apply caesar cipher in a text for English alphabet.
-    %   cipher_text = CAESAR(clear_text, key, is_spanish) 
+    %   cipher_text = CAESAR(clear_text, key) 
     % Params
     %   clear_next -> str: message text to cipher 
     %   key        -> int: offset value
@@ -20,9 +20,9 @@ function cipher_text =  caesar(clear_text, key)
         if isletter(clear_text(i))
             ascii_code = double(clear_text(i)); % get  letter ascii code
             base = 0; % initial code (use to normalize values)
-            if (ascii_code >= 65 && ascii_code <= 90) || ascii_code == 209
+            if (ascii_code >= 65 && ascii_code <= 90)
                 base = 65;
-            elseif (ascii_code >= 97 && ascii_code <= 122) || ascii_code == 241
+            elseif (ascii_code >= 97 && ascii_code <= 122)
                 base = 97; % initial lowercase letter ascii code
             end
             % calculate new ascii code by the key
