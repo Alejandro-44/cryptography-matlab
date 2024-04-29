@@ -1,5 +1,5 @@
 function cipher_text = spanish_caesar(clear_text, key)
-    % CAESAR Apply caesar cipher in a text for Spanish alphabet.
+    % CAESAR_SPANISH Apply caesar cipher in a text for Spanish alphabet.
     %   cipher_text = CAESAR(clear_text, key) 
     % Params
     %   clear_next -> str: message text to cipher 
